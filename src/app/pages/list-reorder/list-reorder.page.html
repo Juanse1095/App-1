@@ -1,0 +1,77 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+<ion-buttons slot="start">
+    <ion-back-button defaultHref="/" color="primary" text="volver"></ion-back-button>
+</ion-buttons>
+
+    <ion-title>List - Reorder</ion-title>
+
+
+<ion-buttons slot="end">
+<ion-button 
+  color="primary"
+  (click)="reorderDisabled = !reorderDisabled"
+  fill="clear">
+  <!-- Toggle --> <ion-icon slot="icon-only" name="options"></ion-icon>
+</ion-button>
+</ion-buttons>
+
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+  <ion-card mode="ios">
+
+      <ion-card-header>
+          <ion-card-subtitle>Component</ion-card-subtitle>
+          <ion-card-title>ION-REORDER
+          </ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          <p>
+            Reorder is a component that allows an item in a group of items 
+            to be dragged to change its order within that group. It must be 
+            used within an ion-reorder-group to provide a visual drag and 
+            drop interface.
+          </p>
+      </ion-card-content>
+
+      <ion-list>
+
+        <ion-item *ngFor="let item of data"
+                   (click)="onClick(item)">
+            <ion-label>{{ item.name }}</ion-label>
+            <ion-checkbox [color]= "item.name"
+                          [(ngModel)]="item.selected"
+                          slot="end"></ion-checkbox>
+        </ion-item>
+    
+      </ion-list>
+
+      <ion-list>
+        <ion-reorder-group [disabled]="reorderDisabled"
+                           (ionItemReorder)="doReorder( $event )">
+  
+            <ion-item *ngFor="let personaje of personajes">
+              <ion-label>{{ personaje }}</ion-label>
+              <ion-reorder slot="end">
+                <ion-icon color="medium" name="reorder-three"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+
+        </ion-reorder-group>
+      </ion-list>
+      <br>
+      
+  </ion-card>
+</ion-content>

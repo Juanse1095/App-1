@@ -1,0 +1,44 @@
+<app-header titulo="Progress - Range"></app-header>
+
+
+
+
+
+
+
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+  <ion-card mode="ios">
+
+      <ion-card-header>
+          <ion-card-subtitle>Component</ion-card-subtitle>
+          <ion-card-title>ION-PROGRESS-BAR
+          </ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          <p>
+            Progress bars inform users about the status of ongoing processes,
+            such as loading an app, submitting a form, or saving updates.
+            There are two types of progress bars: determinate and indeterminate.
+          </p>
+      </ion-card-content>
+
+      <ion-card-content>
+        <ion-list>
+           <ion-card>
+            <ion-progress-bar type="determinate" [value]="porcentaje" color="violeta"></ion-progress-bar>
+           </ion-card>
+          </ion-list>
+      
+          
+          <ion-list>
+              <ion-range min="0" max="100" color="medium"  [pinFormatter]="customFormatter" [pin]="true" (ionChange)="rangeChange ( $event )">
+                <ion-icon size="medium" slot="start" name="volume-low" color="medium"></ion-icon>
+                <ion-icon size="medium" slot="end" name="volume-high" color="dark"></ion-icon>
+              </ion-range>
+          </ion-list>
+      </ion-card-content>
+
+  </ion-card>
+</ion-content>

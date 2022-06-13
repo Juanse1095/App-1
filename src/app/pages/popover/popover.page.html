@@ -1,0 +1,72 @@
+<ion-header  class="ion-no-border" translucent>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref="/"
+      text="Volver"
+      color="dark">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title>popover</ion-title>
+
+
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover( $event )">
+        <ion-icon color="violeta" slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+  <ion-card mode="ios">
+
+      <ion-card-header>
+          <ion-card-subtitle>Component</ion-card-subtitle>
+          <ion-card-title>ION-POPOVER
+          </ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          <p>
+            A Popover is a dialog that appears on top of the current page. 
+            It can be used for anything, but generally it is used for 
+            overflow actions that don't fit in the navigation bar.
+          </p>
+      </ion-card-content>
+
+      <ion-list>
+
+        <ion-item *ngFor="let item of data"
+                   (click)="onClick(item)">
+            <ion-label>{{ item.name }}</ion-label>
+            <ion-checkbox [color]= "item.name"
+                          [(ngModel)]="item.selected"
+                          slot="end"></ion-checkbox>
+        </ion-item>
+    
+      </ion-list>
+      <ion-card-content>
+        <ion-button color="dark" (click)="presentPopover( $event )" expand="block">
+          Click me
+        </ion-button>
+      </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="presentPopover( $event )">
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

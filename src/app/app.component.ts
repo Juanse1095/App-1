@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
+import { Observable } from 'rxjs';
+import { Componente } from './components/interfaces/interfaces';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,28 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+
+  componentes: Observable<Componente[]>;
+
+  constructor(
+    private platform: Platform,
+    private dataService: DataService
+  ) {
+    this.initializeApp();
+  }
+
+  initializeApp() {
+    this.platform.ready().then(()=> {
+    this.componentes = this.dataService.getMenuOpts();
+    this.checkDarkTheme();
+    });
+  }
+
+  checkDarkTheme() {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if ( prefersDark.matches ) {
+      document.body.classList.toggle( 'dark' );
+    }
+  }
+
 }

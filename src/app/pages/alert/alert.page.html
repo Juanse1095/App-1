@@ -1,0 +1,97 @@
+<app-header titulo="Alert"></app-header>
+
+<ion-content fullscreen class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+    <ion-card mode="ios">
+
+        <ion-card-header>
+            <ion-card-subtitle>Alerts Components</ion-card-subtitle>
+            <ion-card-title>ION-ALERT</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+            <p>
+                An Alert is a dialog that presents users with information
+                or collects information from the user using inputs. An
+                alert appears on top of the app's content.
+            </p>
+            <br>
+            <hr color="grey" />
+        </ion-card-content>
+
+        <!-- HEADER -->
+        <ion-card-header>
+            <ion-card-title><center></center>Alert</ion-card-title>
+            <ion-card-subtitle><center></center>Guía de alertas #1</ion-card-subtitle>
+        </ion-card-header>
+        <!-- HEADER -->
+  
+        <!-- BOTON -->
+        <ion-card-content class="animate__animated animate__fadeIn">
+            <ion-button (click)="presentAlert()" expand="block" color="dark">
+                Alert
+            </ion-button>
+        </ion-card-content>
+        <!-- BOTON -->
+
+        <!-- HEADER -->
+        <ion-card-header>
+            <ion-card-title><center></center>Alert MultiButtons</ion-card-title>
+            <ion-card-subtitle><center></center>Guía de alertas #2</ion-card-subtitle>
+        </ion-card-header>
+        <!-- HEADER -->
+  
+        <!-- BOTON -->
+        <ion-card-content class="animate__animated animate__fadeIn">
+            <ion-button (click)="presentAlertMultipleButtons()" expand="block" color="dark">
+                Alert MultiButtons
+            </ion-button>
+        </ion-card-content>
+        <!-- BOTON -->
+
+        <!-- HEADER -->
+        <ion-card-header>
+            <ion-card-title>Present Alert Prompt</ion-card-title>
+            <ion-card-subtitle>Guía de alertas #3</ion-card-subtitle>
+        </ion-card-header>
+        <!-- HEADER -->
+
+        <!-- BOTON -->
+        <ion-card-content class="animate__animated animate__fadeIn">
+            <ion-button (click)="presentAlertPrompt()" expand="block" color="dark">
+                Present Alert Prompt
+            </ion-button>
+        </ion-card-content>
+        <!-- BOTON -->
+
+        <!-- HEADER -->
+        <ion-card-header>
+            <ion-card-title>Present Alert Radio</ion-card-title>
+            <ion-card-subtitle>Guía de alertas #4</ion-card-subtitle>
+        </ion-card-header>
+        <!-- HEADER -->
+
+        <!-- BOTON -->
+        <ion-card-content class="animate__animated animate__fadeIn">
+            <ion-button (click)="presentAlertRadio()" expand="block" color="dark">
+                Present Alert Radio
+            </ion-button>
+        </ion-card-content>
+        <!-- BOTON -->
+
+        <!-- HEADER -->
+        <ion-card-header>
+            <ion-card-title>Present Alert Checkbox</ion-card-title>
+            <ion-card-subtitle>Guía de alertas #5</ion-card-subtitle>
+        </ion-card-header>
+        <!-- HEADER -->
+
+        <!-- BOTON -->
+        <ion-card-content class="animate__animated animate__fadeIn">
+            <ion-button (click)="presentAlertCheckbox()" expand="block" color="dark">
+                present Alert Checkbox
+            </ion-button>
+        </ion-card-content>
+        <!-- BOTON -->
+
+    </ion-card>
+</ion-content>

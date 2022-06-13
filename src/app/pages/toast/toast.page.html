@@ -1,0 +1,30 @@
+<app-header titulo="toast"></app-header>
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+  <ion-card mode="ios">
+
+      <ion-card-header>
+          <ion-card-subtitle>Component</ion-card-subtitle>
+          <ion-card-title>ION-TOAST
+          </ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          <p>
+            A Toast is a subtle notification commonly used in modern
+            applications. It can be used to provide feedback about an
+            operation or to display a system message. The toast appears
+            on top of the app's content, and can be dismissed by the
+            app to resume user interaction with the app.
+          </p>
+          <br>
+          <ion-button color="dark" (click)="presentToast()" expand="block">
+            Present Toast
+          </ion-button>
+          <ion-button color="dark" (click)="presentToastWithOptions()" expand="block">
+            Present Toast With Options
+          </ion-button>
+      </ion-card-content>
+
+  </ion-card>
+</ion-content> 

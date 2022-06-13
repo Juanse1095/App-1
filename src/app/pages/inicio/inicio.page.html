@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="medium"></ion-menu-button>
+    </ion-buttons>
+
+          <ion-icon slot="end" name="moon"></ion-icon>
+          <ion-toggle slot="end"
+                      [ngModel]="darkMode"
+                      (ionChange)="cambio()"></ion-toggle>
+
+    <!-- <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-list>
+  <ion-item *ngFor="let c of componentes | async"
+            [routerLink]="c.redirectTo"
+            detail>
+    <ion-icon [name]="c.icon" slot="start" color="violeta"></ion-icon>
+    {{ c.name }}
+  </ion-item>
+</ion-list>
+
+  <!-- <ion-button routerLink="/alert">
+    Alert
+  </ion-button>
+ 
+  <ion-button routerLink="/action-sheet">
+    Action Sheet
+  </ion-button> -->
+
+</ion-content>
+
+

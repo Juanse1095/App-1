@@ -1,0 +1,86 @@
+<app-header titulo="input"></app-header>
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+  <ion-card mode="ios">
+
+      <ion-card-header>
+          <ion-card-subtitle>Component</ion-card-subtitle>
+          <ion-card-title>ION-INPUT
+          </ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          <p>
+            The input component is a wrapper to the HTML input element with
+            custom styling and additional functionality. It accepts most of
+            the same properties as the HTML input, but works great on desktop 
+            devices and integrates with the keyboard on mobile devices.
+          </p>
+      </ion-card-content>
+
+      
+    
+   <!-- <ion-list>
+   
+        <ion-list-header>
+            <ion-label>Input normal</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Nombre:</ion-label>
+            <ion-input type="text" placeholder="Awesome Input" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+
+    </ion-list> -->
+
+
+<form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)"> 
+
+    <ion-list-header>
+        <!-- <ion-label>Formulario: {{ formulario.valid }}</ion-label> -->
+        <ion-label>Formulario:</ion-label>
+    </ion-list-header>
+    <br>
+    <ion-item>
+        <ion-label>Email:</ion-label>
+        <ion-input type="email"
+                   placeholder="Email"
+                   name="email"
+                   [(ngModel)]="usuario.email"
+                   pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                   required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label>Password:</ion-label>
+        <ion-input type="password"
+                   placeholder="Contraseña"
+                   name="password"
+                   [(ngModel)]="usuario.password"
+                   required></ion-input>
+    </ion-item>
+    
+    <br>
+    
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="0,4"></ion-col>
+            <ion-col size="12">
+                <ion-button
+                    [disabled]="formulario.invalid"
+                    type="submit"
+                    expand="block"
+                    shape="square"
+                    color="dark">
+    
+                <b>Guardar</b>
+    
+                </ion-button>
+            </ion-col>
+            <ion-col size="0,4"></ion-col>
+        </ion-row>
+    </ion-grid>
+    
+    </form>
+  </ion-card>
+</ion-content>

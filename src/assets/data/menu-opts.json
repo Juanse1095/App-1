@@ -1,0 +1,117 @@
+[
+    {
+      "icon": "prism",
+      "name": "Action Sheet",
+      "redirectTo": "/action-sheet"
+    },
+    {
+      "icon": "skull",
+      "name": "Alert",
+      "redirectTo": "/alert"
+    },
+    {
+      "icon": "hand-right",
+      "name": "Avatar",
+      "redirectTo": "/avatar"
+    },
+    {
+      "icon": "nuclear",
+      "name": "Buttons",
+      "redirectTo": "/button"
+    },
+    {
+      "icon": "card",
+      "name": "Cards",
+      "redirectTo": "/card"
+    },
+    {
+      "icon": "reader",
+      "name": "Check Box",
+      "redirectTo": "/check"
+    },
+    {
+      "icon": "calendar",
+      "name": "DateTime",
+      "redirectTo": "/date-time"
+    },
+    {
+      "icon": "heart-circle",
+      "name": "Fab",
+      "redirectTo": "/fab"
+    },
+    {
+      "icon": "layers",
+      "name": "Grid",
+      "redirectTo": "/grid"
+    },
+    {
+      "icon": "infinite",
+      "name": "Infinite-Scroll",
+      "redirectTo": "/infinite"
+    },
+    {
+      "icon": "fitness",
+      "name": "Input",
+      "redirectTo": "/input"
+    },
+    {
+      "icon": "list",
+      "name": "List - Sliding",
+      "redirectTo": "/list"
+    },
+    {
+      "icon": "layers",
+      "name": "List - Reorder",
+      "redirectTo": "/list-reorder"
+    },
+    {
+      "icon": "stopwatch",
+      "name": "Loading",
+      "redirectTo": "/loading"
+    },
+    {
+      "icon": "phone-portrait-outline",
+      "name": "Modal",
+      "redirectTo": "/modal"
+    }, 
+    {
+      "icon": "tablet-portrait-outline",
+      "name": "Popover",
+      "redirectTo": "/popover"
+    },
+    {
+      "icon": "options-outline",
+      "name": "ProgressBar",
+      "redirectTo": "/progress"
+    },
+    {
+      "icon": "arrow-down-circle",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
+    },
+    {
+      "icon": "search",
+      "name": "Search",
+      "redirectTo": "/search"
+    },
+    {
+      "icon": "earth",
+      "name": "Segment",
+      "redirectTo": "/segment"
+    },
+    {
+      "icon": "albums",
+      "name": "Slides",
+      "redirectTo": "/slides"
+    },
+    {
+      "icon": "grid",
+      "name": "Tabs",
+      "redirectTo": "/tabs"
+    },
+    {
+      "icon": "bluetooth",
+      "name": "Toast",
+      "redirectTo": "/toast"
+    }
+  ] 

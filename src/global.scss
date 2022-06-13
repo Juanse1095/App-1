@@ -24,3 +24,23 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.rojo, .rojo .sc-ion-action-sheet-md {
+color: rgb(255, 73, 97) !important;
+}
+
+.naranja, .naranja .sc-ion-action-sheet-md {
+    color: rgb(255, 150, 0) !important;
+}
+
+ion-range{
+    --bar-height: 14px;
+    --knob-size: 14px;
+    --knob-border-radius: 50%;
+    --bar-border-radius: 20px;
+}
+
+ion-searchbar{
+    --box-shadow: none !important;
+    --border-radius: 20px !important;
+}

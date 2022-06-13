@@ -1,0 +1,37 @@
+<app-header titulo="dateTime"></app-header>
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+    <ion-card mode="ios">
+
+    <ion-card-header>
+        <ion-card-subtitle>Component</ion-card-subtitle>
+        <ion-card-title>ION-DATETIME</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+        <p>
+            Datetimes present a calendar interface and time wheel,
+            making it easy for users to select dates and times.
+            Datetimes are similar to the native input elements of
+            datetime-local, however, Ionic Framework's Datetime 
+            component makes it easy to display the date and time in
+            the preferred format, and manage the datetime values.
+        </p>
+    </ion-card-content>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12">
+
+                <ion-datetime [value]="fechaNaci.toISOString()"
+                (ionChange)="cambioFecha( $event )"
+                size="cover"
+                color="violeta">
+                </ion-datetime>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    </ion-card>
+</ion-content>

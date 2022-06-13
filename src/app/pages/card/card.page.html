@@ -1,0 +1,147 @@
+<app-header titulo="Cards"></app-header>
+
+<ion-content fullscreen>
+
+    <!-- <ion-card mode="ios">
+        <ion-card-header>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita inventore, officia, iste aut adipisci repellendus itaque officiis.
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card mode="ios">
+        <ion-item color="primary">
+            <ion-icon slot="end" name="game-controller"></ion-icon>
+            <ion-label slot="start">Marcador</ion-label>
+        </ion-item>
+
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita inventore, officia, iste aut adipisci repellendus itaque officiis.
+      </ion-card-content>
+      </ion-card> -->
+
+      <ion-card mode="ios" class="animate__animated animate__fadeInRight">
+
+          <ion-item color="dark">
+              <ion-icon slot="end" name="game-controller"></ion-icon>
+              <ion-label><b>kwyz/</b></ion-label>
+          </ion-item>
+
+          <ion-img src="/assets/shutterstock_206350801.jpg"></ion-img>
+
+          <ion-card-content>
+            <ion-card-subtitle>Non Fungible Token</ion-card-subtitle>
+            <!-- <div class="ion-padding"></div> -->
+            <ion-card-title>MekaRobot#30284</ion-card-title>
+            <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita inventore, officia, iste aut adipisci repellendus itaque officiis.
+          
+              <ion-grid fixed>
+                <ion-row>
+
+                <ion-col size="6">
+                    <ion-button color="2c" expand="block" fill="clear" (click)="onClick()">
+                    <ion-icon  class="ion-padding" slot="icon-only"
+                              [name]="favorito ? 'star' : 'star-outline' ">
+                  </ion-icon>
+                  </ion-button>
+                </ion-col>
+                
+                <ion-col size="6">
+                    <ion-button color="violeta" expand="block" fill="clear" (click)="OnClick()">
+                    <ion-icon class="ion-padding" slot="icon-only"
+                              [name]=" like ? 'heart':'heart-outline' ">
+                  </ion-icon>
+                  </ion-button>
+                </ion-col>
+
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+      </ion-card>
+
+      <ion-card mode="ios" class="animate__animated animate__fadeInLeft">
+
+          <ion-item color="dark">
+              <ion-icon slot="end" name="nuclear"></ion-icon>
+              <ion-label><b>qkzy/</b></ion-label>
+          </ion-item>
+
+          <ion-img src="/assets/stan-lee.jpg"></ion-img>
+
+          <ion-card-content>
+            <ion-card-subtitle>Non Fungible Token</ion-card-subtitle>
+            <!-- <div class="ion-padding"></div> -->
+            <ion-card-title>MekaRobot#4323</ion-card-title>
+            <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita inventore, officia, iste aut adipisci repellendus itaque officiis.
+          
+              <ion-grid fixed>
+                <ion-row>
+
+                <ion-col size="6">
+                    <ion-button color="2c" expand="block" fill="clear" (click)="onClick()">
+                    <ion-icon  class="ion-padding" slot="icon-only"
+                              [name]="favorito ? 'star' : 'star-outline' ">
+                  </ion-icon>
+                  </ion-button>
+                </ion-col>
+                
+                <ion-col size="6">
+                    <ion-button color="violeta" expand="block" fill="clear" (click)="OnClick()">
+                    <ion-icon class="ion-padding" slot="icon-only"
+                              [name]=" like ? 'heart':'heart-outline' ">
+                  </ion-icon>
+                  </ion-button>
+                </ion-col>
+
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+      </ion-card>
+      
+
+      <ion-card mode="ios" class="animate__animated animate__fadeInRight">
+        <ion-item color="dark">
+            <ion-icon slot="end" name="skull"></ion-icon>
+            <ion-label><b>xzkw/</b></ion-label>
+        </ion-item>
+        <!-- IMAGEN TEXTO -->
+        <img src="https://miro.medium.com/max/1400/1*pK_Ut2SPy1-_ipT1E2gFGg.jpeg">
+        
+        <ion-card-content>
+          <ion-card-subtitle>Non Fungible Token</ion-card-subtitle>
+          <!-- <div class="ion-padding"></div> -->
+          <ion-card-title>MekaRobot#11234</ion-card-title>
+          <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita inventore, officia, iste aut adipisci repellendus itaque officiis.
+        
+            <ion-grid fixed>
+              <ion-row>
+                
+              <ion-col size="6">
+                  <ion-button color="2c" expand="block" fill="clear" (click)="onClick()">
+                  <ion-icon  class="ion-padding" slot="icon-only"
+                            [name]="favorito ? 'star' : 'star-outline' ">
+                </ion-icon>
+                </ion-button>
+              </ion-col>
+              
+              <ion-col size="6">
+                  <ion-button color="violeta" expand="block" fill="clear" (click)="OnClick()">
+                  <ion-icon class="ion-padding" slot="icon-only"
+                            [name]=" like ? 'heart':'heart-outline' ">
+                </ion-icon>
+                </ion-button>
+              </ion-col>
+
+              </ion-row>
+            </ion-grid>
+
+          </ion-card-content>
+      </ion-card>
+</ion-content>

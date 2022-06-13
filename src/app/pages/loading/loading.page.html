@@ -1,0 +1,41 @@
+<app-header titulo="loading"></app-header>
+
+<ion-content class="ion-padding" fullscreen class="animate__animated animate__fadeInDown">
+    <ion-card mode="ios">
+  
+        <ion-card-header>
+            <ion-card-subtitle>Component</ion-card-subtitle>
+            <ion-card-title>ION-LOADING
+            </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+            <p>
+                An overlay that can be used to indicate activity while
+                blocking user interaction. The loading indicator appears 
+                on top of the app's content, and can be dismissed by the 
+                app to resume user interaction with the app. It includes 
+                an optional backdrop, which can be disabled by setting 
+                showBackdrop: false upon creation.
+            </p>
+        </ion-card-content>
+  
+        <ion-list>
+  
+          <ion-item *ngFor="let item of data"
+                     (click)="onClick(item)">
+              <ion-label>{{ item.name }}</ion-label>
+              <ion-checkbox [color]= "item.name"
+                            [(ngModel)]="item.selected"
+                            slot="end"></ion-checkbox>
+          </ion-item>
+      
+        </ion-list>
+        <ion-card-content>
+            <ion-button color="dark" (click)="mostrarLoading()" expand="block">
+                Mostrar Loading
+            </ion-button>
+        </ion-card-content>
+  
+    </ion-card>
+  </ion-content>
